@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="thesis-grid6" size="1.000000 1.646688" />
+    <ImageTarget name="thesis-grid5" size="1.000000 1.815652" />
+    <ImageTarget name="thesis-grid4" size="1.000000 2.197895" />
+    <ImageTarget name="thesis-grid3" size="1.000000 1.662420" />
+    <ImageTarget name="thesis-grid2" size="1.000000 1.359375" />
+    <ImageTarget name="thesis-grid1" size="1.000000 1.279099" />
+  </Tracking>
+</QCARConfig>
