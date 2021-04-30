@@ -123,6 +123,35 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!21 &157221856
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: '2-smaMaterial
+
+    17662'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: c8c820e3224443a5aae12fd832bce3a4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &295299213
 GameObject:
   m_ObjectHideFlags: 0
@@ -270,35 +299,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   video: {fileID: 295299215}
   currentScene: 1
---- !u!21 &390280390
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'thesis-grid2Material
-
-    16510'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 0845ae655a404ee79cc2140425eadee5, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
-  m_BuildTextureStacks: []
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -531,7 +531,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1884210821}
-  m_Mesh: {fileID: 1915063015}
+  m_Mesh: {fileID: 2114231085}
 --- !u!23 &1884210823
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -551,7 +551,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 390280390}
+  - {fileID: 157221856}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -618,7 +618,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 295299215}
         m_TargetAssemblyTypeName: UnityEngine.Video.VideoPlayer, UnityEngine
-        m_MethodName: Pause
+        m_MethodName: Stop
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -640,13 +640,13 @@ MonoBehaviour:
   m_Script: {fileID: -1631628248, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mTrackableName: thesis-grid2
+  mTrackableName: 2-sma
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/ThesisSmall.xml
-  mAspectRatio: 1.359375
+  mDataSetPath: Vuforia/THESIS-FINAL.xml
+  mAspectRatio: 1.305204
   mImageTargetType: 0
   mWidth: 1
-  mHeight: 1.359375
+  mHeight: 1.305204
   mRuntimeTexture: {fileID: 0}
 --- !u!4 &1884210827
 Transform:
@@ -663,13 +663,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!43 &1915063015
+--- !u!43 &2114231085
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ImageTargetMesh16500
+  m_Name: ImageTargetMesh17652
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -681,7 +681,7 @@ Mesh:
     vertexCount: 4
     localAABB:
       m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0.5, y: 0, z: 0.6796875}
+      m_Extent: {x: 0.5, y: 0, z: 0.652602}
   m_Shapes:
     vertices: []
     shapes: []
@@ -760,7 +760,7 @@ Mesh:
       format: 0
       dimension: 0
     m_DataSize: 128
-    _typelessdata: 000000bf0000000000002ebf000000000000803f000000000000000000000000000000bf0000000000002e3f000000000000803f00000000000000000000803f0000003f0000000000002ebf000000000000803f000000000000803f000000000000003f0000000000002e3f000000000000803f000000000000803f0000803f
+    _typelessdata: 000000bf00000000ed1027bf000000000000803f000000000000000000000000000000bf00000000ed10273f000000000000803f00000000000000000000803f0000003f00000000ed1027bf000000000000803f000000000000803f000000000000003f00000000ed10273f000000000000803f000000000000803f0000803f
   m_CompressedMesh:
     m_Vertices:
       m_NumItems: 0
@@ -815,7 +815,7 @@ Mesh:
     m_UVInfo: 0
   m_LocalAABB:
     m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0.5, y: 0, z: 0.6796875}
+    m_Extent: {x: 0.5, y: 0, z: 0.652602}
   m_MeshUsageFlags: 0
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
